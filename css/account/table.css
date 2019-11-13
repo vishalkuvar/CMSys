@@ -1,0 +1,66 @@
+.cmsys-table {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+
+.cmsys-table tr {
+	border: 1px solid #D9E4E6;
+}
+
+.cmsys-table tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+
+.cmsys-table th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+.cmsys-table th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.cmsys-table th:nth-child(2) {
+  display: table-cell;
+}
+.cmsys-table th:nth-child(2) span {
+  display: block;
+}
+.cmsys-table th:nth-child(2):after {
+  display: none;
+}
+.cmsys-table td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+  border: 1px solid #D9E4E6;
+}
+.cmsys-table td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+
+.cmsys-table th,
+.cmsys-table td {
+  text-align: left;
+  margin: .5em 1em;
+  display: table-cell;
+  padding: 1em;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+}
+h1 span {
+  color: #167F92;
+}

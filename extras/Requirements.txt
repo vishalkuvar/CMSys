@@ -1,0 +1,9 @@
+1) Web Server (Recommended: Apache)
+2) PHP:
+	Recommended Modules:
+		mysqli
+		mysqlnd
+		ssl
+		mod_rewrite
+3) MySQL (or MariaDB)
+		

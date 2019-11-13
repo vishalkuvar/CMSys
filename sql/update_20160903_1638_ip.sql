@@ -1,0 +1,3 @@
+-- 03092016
+-- Add Ip
+ALTER TABLE `login` ADD `ip` VARCHAR(30) NOT NULL DEFAULT '0.0.0.0';

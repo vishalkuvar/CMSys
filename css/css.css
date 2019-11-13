@@ -1,0 +1,239 @@
+
+body {
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
+}
+
+/* Adjustment for Footer */
+html, body {
+	height: 100%;
+}
+
+#container_footer, #push {
+	height: 30px;
+}
+
+.wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -50px;
+}
+
+/* Form and Login Page */
+.login-page {
+	width: 360px;
+	padding: 8% 0 0;
+	margin: auto;
+}
+.form {
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: rgba(242, 242, 242, 1.0);
+	/* background: rgba(0, 0, 0, 1.0); */
+	border: 0;
+	width: 100%;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+.form button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: rgba(76, 175, 90, 1.0);
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+	background: rgba(67, 160, 71, 1.0);	
+}
+.form .message {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+}
+.form .message a {
+	color: #4CAF50;
+	text-decoration: none;
+}
+.form .register-form {
+	display: none;
+}
+.container {
+	position: relative;
+	z-index: 1;
+	max-width: 300px;
+	margin: 0 auto;
+}
+.container:before, .container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.container .info {
+	margin: 50px auto;
+	text-align: center;
+}
+.container .info h1 {
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 36px;
+	font-weight: 300;
+	color: #1a1a1a;
+}
+.container .info span {
+	color: #4d4d4d;
+	font-size: 12px;
+}
+.container .info span a {
+	color: #000000;
+	text-decoration: none;
+}
+.container .info span .fa {
+	color: #EF3B3A;
+}
+/* should be only 'body' */
+.body {
+	background: #76b852; /* fallback for old browsers */
+	background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+	background: -moz-linear-gradient(right, #76b852, #8DC26F);
+	background: -o-linear-gradient(right, #76b852, #8DC26F);
+	background: linear-gradient(to left, #76b852, #8DC26F);
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;			
+}
+
+/*
+	Message Cards
+*/
+.cmsys-info, .cmsys-success, .cmsys-warning, .cmsys-error,
+.cmsys-info1, .cmsys-success1, .cmsys-warning1, .cmsys-error1,
+.cmsys-error-trans, .cmsys-info-trans {
+	padding:10px;
+	margin:10px 0;
+}
+.cmsys-info::before, .cmsys-success::before, .cmsys-warning::before, .cmsys-error::before, .cmsys-info1::before, .cmsys-success1::before, .cmsys-warning1::before, .cmsys-error1::before, .cmsys-error-trans::before, .cmsys-info-trans::before {
+	font-family: "FontAwesome";
+	font-style: normal;
+	font-weight: 400;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	margin-left: .2em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.cmsys-info:before, .cmsys-info-trans::before {
+	content:"\f05a";
+}
+.cmsys-success:before {
+	content:'\f00c';
+}
+.cmsys-warning:before {
+	content:'\f071';
+}
+.cmsys-error::before, .cmsys-error-trans::before {
+	content:'\f057';
+}
+.cmsys-info, .cmsys-info1, .cmsys-info-trans {
+	color: #00529B;
+	background-color: #BDE5F8;
+}
+.cmsys-success, .cmsys-success1 {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
+.cmsys-warning, .cmsys-warning1 {
+	color: #9F6000;
+	background-color: #FEEFB3;
+}
+.cmsys-error, .cmsys-error1, .cmsys-error-trans {
+	color: #D8000C;
+	background-color: #FFBABA;
+}
+
+.cmsys-info-trans {
+	color: rgba(0, 82, 155, 2.2);
+	font-weight: bold;
+	background-color: rgba(189, 229, 248, 0.6);
+}
+
+.cmsys-error-trans {
+	color: rgba(216, 0, 12, 2.2);
+	font-weight: bold;
+	background-color: rgba(255, 186, 186, 0.6);
+}
+
+.text-align {
+	word-wrap: break-word;
+	display: inline-block;	
+}
+
+.text-font {
+	font-family: 'Roboto';
+}
+
+.card a {
+	font-weight: bold;
+}
+
+/* unvisited link */
+.card a:link {
+    color: green;
+}
+
+/* visited link */
+.card a:visited {
+    color: green;
+}
+
+/* mouse over link */
+.card a:hover {
+    color: hotpink;
+}
+
+a.red-link:hover {
+	color: hotpink !important;
+}
+
+/* selected link */
+.card a:active a.red-link:active {
+    color: blue;
+}
+
+/* unvisited link */
+.card a.red-link:link {
+    color: red;
+}
+
+/* visited link */
+.card a.red-link:visited {
+    color: red;
+}
+
