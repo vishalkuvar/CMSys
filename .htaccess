@@ -1,0 +1,24 @@
+Options -Indexes -MultiViews
+RewriteEngine On
+
+# Logout
+RewriteRule ^system/logout/*$ ./cms/logout.php [L]
+# Index
+RewriteRule ^index/*$ ./index.php [L]
+# Register
+RewriteRule ^index/([A-Za-z]+)*$ ./index.php?$1 [L]
+RewriteRule ^register/*$ ./index.php?register [L]
+# Login/Register
+RewriteRule ^system/(register|login)/*$ ./cms/$1.php [L]
+RewriteRule ^system/verify/email/([A-Za-z0-9_/]*)/([A-Za-z0-9_/]*)/$ ./cms/system/verify/email.php?id=$1&code=$2 [L]
+# Dynamic URL
+RewriteRule ^(account|system)/([A-Za-z0-9_/]*)/$ ./cms/profile.php [L]
+
+# Restrict Direct Folder Access
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?dastgir.tech [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?localhost [NC]
+RewriteRule ^(extras/|sql/|modules/|config/|bg/) - [F,L,NC]
+
+RewriteCond %{THE_REQUEST} ^(.*)\.php [NC]
+RewriteRule .? /cmsys/index/ [R,L]

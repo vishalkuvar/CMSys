@@ -1,0 +1,8 @@
+ToDo List
+===================
+
+For Teachers:
+
+----------
+
+ 1. Able to remove own Notes/Notices/Assignment.
